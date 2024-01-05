@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car management</title>
+    <link rel="stylesheet" href="../css/cars-management.css">
+    <title>Document</title>
+    <link rel="stylesheet" href="../fontawesome-free-6.5.1-web/fontawesome-free-6.5.1-web/css/all.min.css">
+</head>
+<body>
+    <header>
+        <h1>AUTOMOTIVE REPAIR</h1>
+    </header>
+
+    <div class="container">
+        <aside>
+            <div class="menu">
+                <p><b>MENU:</b></p>
+                <p><a href="../html/add-new-car.html">Add a new car</a></p>
+                <p><a href="../html/cars-management.html">Cars management</a></p>
+            </div>
+        </aside>
+
+        <div class="vr">
+        </div>
+
+        <main>
+            <form id="car-update-form" >
+                <p><b>ACCESSORY DETAILS:</b></p>
+
+                <div class="form-control">
+                    <label for="license-plate">license plate</label>
+                    <input type="text" name="license-plate" id="license-plate" placeholder="29S2-02715" required>
+                </div>
+
+                <div class="form-control">
+                    <label for="repair-date">repair date</label>
+                    <input type="date" name="repair-date" id="repair-date" required>
+                </div>
+                
+                <div class="form-control">
+                    <label for="customer-name">Customer name</label>
+                    <input type="text" name="customer-name" id="customer-name" placeholder="Lê Tuấn Đạt" required>
+                </div>
+
+                <div class="form-control">
+                    <label for="catalog">Catalog</label>
+                    <input type="text" name="catalog" id="catalog" placeholder="Bảo dưỡng định kì lần 1" required>
+                </div>
+
+                <div class="form-control">
+                    <label for="car-maker">Car maker</label>
+                    <input type="text" name="car-maker" id="car-maker" placeholder="Bảo dưỡng định kì lần 1" required>
+                </div>
+
+
+                <div class="form-submit">
+                    <div>
+                        <input type="submit" value="Save Car">
+                        <input type="reset" value="reset">
+                    </div>
+
+                    <div>
+                        <a href="../html/accessory-detail.html">Accessory Details</a>
+                    </div>
+                </div>
+            </form>
+
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>license plate</th>
+                            <th>customer name</th>
+                            <th>Repair date</th>
+                            <th>Catalog</th>
+                            <th>Car maker</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody id = "cars">
+                        <tr>
+                            <td>29S2-02715</td>
+                            <td>2023-11-14</td>
+                            <td>Lê Tuấn Đạt</td>
+                            <td>Bảo dưỡng lần 1</td>
+                            <td>toyota</td>
+                            <td>
+                                <button>Edit <i class="fa-solid fa-pen-to-square"></i></button>
+                                <button>Xóa <i class="fa-solid fa-trash"></i></button>
+                            </td>
+                        </tr>
+                        
+                    </tbody>
+                </table>
+            </div>
+        </main>
+    </div>
+
+    <footer><i>BASED ON SPRING FRAMEWORK</i></footer>
+    <script src="../js/car-management.js"></script>
+</body>
+</html>
